@@ -25,3 +25,5 @@ To install the application:
     1) clone repo
     2) start "npm install"
     3) start "npm start"
+    
+If you don't want to install the application you can check it by link https://huziahmetov-artur.github.io/SmartexLab/#/   
