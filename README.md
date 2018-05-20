@@ -21,7 +21,7 @@ Tasks:
     3) It took about 8 hour.
 
 20.05:
-1)responsive desing is ready. 1 hour.
+1)responsive design is ready. 1 hour.
 
 
 Time for task - 9 hour.
