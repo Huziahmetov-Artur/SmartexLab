@@ -9,7 +9,7 @@ function fetchInfo(a) {
 }
 
 function getInfo() {
-    let e = fetchInfo('http://jsonplaceholder.typicode.com/users/');
+    let e = fetchInfo('https://jsonplaceholder.typicode.com/users/');
     return e;
 }
 

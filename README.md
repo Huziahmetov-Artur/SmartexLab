@@ -25,6 +25,12 @@ Tasks:
 2) The responsive design remained.
 3) It took about 8 hour.
 
+20.05:
+1)responsive desing is ready. 1 hour.
+
+
+Time for task - 9 hour.
+
 To install the application:
 1) clone repo
 2) start "npm install"

@@ -1,5 +1,7 @@
 body{
     display: flex;
+    align-items: center;
+    justify-content: center;
     background: url("background_opcion2.jpg");
     margin: 0;
 }
@@ -11,7 +13,7 @@ body{
     bottom: 0;
     left: 0;
     background: rgba(0,0,0,0.8);
-    z-index: 99999;
+    z-index: 1;
 
 }
 .modalWindow:target {
@@ -90,4 +92,186 @@ figcaption{
 img{
     width: 50%;
     height: 50%;
+}
+
+@media screen and (max-width: 1366px){
+    .modalWindow > div {
+        width: 400px;
+        position: relative;
+        margin: 10% auto;
+        padding: 5px 20px 13px 20px;
+        background: #fff;
+    }
+    .mainPart{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 1166px;
+        height: 600px;
+    }
+    .link{
+        width: 20%;
+        height: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .linkToProfile{
+        display: flex;
+        width: 966px;
+        height: 600px;
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width: 1024px){
+    .modalWindow > div {
+        width: 400px;
+        position: relative;
+        margin: 10% auto;
+        padding: 5px 20px 13px 20px;
+        background: #fff;
+    }
+    .mainPart{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 1024px;
+        height: 600px;
+    }
+    .link{
+        width: 20%;
+        height: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .linkToProfile{
+        display: flex;
+        width: 900px;
+        height: 600px;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 960px){
+    .modalWindow > div {
+        width: 400px;
+        position: relative;
+        margin: 10% auto;
+        padding: 5px 20px 13px 20px;
+        background: #fff;
+    }
+    .mainPart{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 860px;
+        height: 600px;
+    }
+    .link{
+        width: 20%;
+        height: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .linkToProfile{
+        display: flex;
+        width: 760px;
+        height: 600px;
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width: 860px){
+    .modalWindow > div {
+        width: 400px;
+        position: relative;
+        margin: 10% auto;
+        padding: 5px 20px 13px 20px;
+        background: #fff;
+    }
+    .mainPart{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 760px;
+        height: 600px;
+    }
+    .link{
+        width: 25%;
+        height: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .linkToProfile{
+        display: flex;
+        width: 660px;
+        height: 600px;
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width: 660px){
+    .map{
+        display: none;
+    }
+    .modalWindow > div {
+        width: 300px;
+        position: relative;
+        margin: 10% auto;
+        padding: 5px 20px 13px 20px;
+        background: #fff;
+    }
+    .mainPart{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 560px;
+        height: 600px;
+    }
+    .link{
+        width: 50%;
+        height: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .linkToProfile{
+        display: flex;
+        width: 560px;
+        height: 600px;
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width: 500px){
+    .map{
+        display: none;
+    }
+    .modalWindow > div {
+        width: 200px;
+        position: relative;
+        margin: 10% auto;
+        padding: 5px 20px 13px 20px;
+        background: #fff;
+    }
+    .mainPart{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 450px;
+        height: 500px;
+    }
+    .link{
+        width: 50%;
+        height: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .linkToProfile{
+        display: flex;
+        width: 450px;
+        height: 500px;
+        flex-wrap: wrap;
+    }
 }
