@@ -1,0 +1,15 @@
+
+<div class="mainPart">
+<div class="linkToProfile">
+      <a *ngFor="let BIO of handleBioInfo" class="link" >
+        <div class="bioInfo" (click)="onSelect(BIO)" routerLink="/modal/{{BIO.id}}">
+          <figure>
+            <img src="../../assets/avatar.png"/>
+          </figure>
+          <figcaption>
+            {{BIO.name}}
+          </figcaption>
+        </div>
+      </a>
+  </div>
+</div>
