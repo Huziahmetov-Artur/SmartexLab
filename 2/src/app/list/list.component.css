@@ -1,0 +1,16 @@
+.gameBlock{
+  width: 300px;
+  height: 350px;
+  background: azure;
+  margin: 10px;
+}
+img{
+  height: 150px;
+  width: 150px;
+}
+.gamePage > div{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  height: 350px;
+}

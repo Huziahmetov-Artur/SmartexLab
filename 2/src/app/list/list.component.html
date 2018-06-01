@@ -1,0 +1,12 @@
+<div class="gamePage">
+  <div >
+<div *ngFor="let App of user" class="gameBlock" >
+  <h2>{{App.app_name}}</h2>
+  <img src="{{App.url}}">
+  <p>Downloads : {{App.downloads}}</p>
+  <p>Size : {{App.file_size}}</p>
+  <button>Download</button>
+</div>
+  </div>
+</div>
+

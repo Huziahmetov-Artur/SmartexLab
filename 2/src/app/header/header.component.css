@@ -1,0 +1,24 @@
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+img{
+  height: 70px;
+  width: auto;
+}
+input[type = "search"]{
+  height: 50px;
+  width: 1000px;
+  font-size: 30px;
+}
+ul{
+  display: flex;
+  width: 600px;
+}
+li{
+  width: 150px;
+  font-size: 30px;
+  list-style-type: none;
+}
