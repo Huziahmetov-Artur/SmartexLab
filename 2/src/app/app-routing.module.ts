@@ -2,19 +2,15 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ListComponent} from "./list/list.component";
 import {AppPageComponent} from "./app-page/app-page.component";
-import {HeaderComponent} from "./header/header.component";
-import {ActionAppComponent} from "./action-app/action-app.component";
-import {MusicAppComponent} from "./music-app/music-app.component";
-import {StrategyAppComponent} from "./strategy-app/strategy-app.component";
-import {AdventureAppComponent} from "./adventure-app/adventure-app.component";
+import {GameTypeAppComponent} from "./gameType-app/gameType-app.component";
+import {NotFoundComponent} from "./not-found/not-found.component";
+
 
 const routes : Routes = [
   {path : '', component : ListComponent},
-  {path : 'action', component : ActionAppComponent},
-  {path : 'music', component : MusicAppComponent},
-  {path : 'strategy', component : StrategyAppComponent},
-  {path : 'adventure', component : AdventureAppComponent},
-  {path : 'game/:id', component : AppPageComponent}
+  {path : 'game/:id', component : AppPageComponent},
+  {path : ':type/:id', pathMatch: 'full', component : GameTypeAppComponent},
+  {path : '**', component : NotFoundComponent},
 ];
 @NgModule({
   imports: [ RouterModule.forRoot(routes) ],

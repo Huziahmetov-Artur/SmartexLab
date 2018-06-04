@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { StrategyAppComponent } from './strategy-app.component';
+import { GameTypeAppComponent } from './gameType-app.component';
 
-describe('StrategyAppComponent', () => {
-  let component: StrategyAppComponent;
-  let fixture: ComponentFixture<StrategyAppComponent>;
+describe('GameTypeAppComponent', () => {
+  let component: GameTypeAppComponent;
+  let fixture: ComponentFixture<GameTypeAppComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ StrategyAppComponent ]
+      declarations: [ GameTypeAppComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(StrategyAppComponent);
+    fixture = TestBed.createComponent(GameTypeAppComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

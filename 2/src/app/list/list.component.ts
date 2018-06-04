@@ -9,13 +9,11 @@ import {GetService} from "../service/get.service";
 })
 export class ListComponent implements OnInit {
 
-  @Input() test;
-  @Input() disp;
   user = listOfApp;
+
   constructor(public GetService : GetService) { }
 
   ngOnInit() {
-
   }
 
   change(type) {

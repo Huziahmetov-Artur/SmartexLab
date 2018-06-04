@@ -7,10 +7,10 @@
   <button (click)="change('version')">Version</button>
 </div>
 <div class="gamePage">
-<div *ngFor="let App of user" class="gameBlock" routerLink="game/{{App.app_short | lowercase }}">
-  <img src="{{App.url}}">
-  <h2>{{App.app_name}}</h2>
-  <p>✩ {{App.all_rating}}</p>
-</div>
-</div>
 
+  <div *ngFor="let App of infoMas" class="gameBlock" routerLink="/game/{{App.app_short | lowercase }}">
+    <img src="{{App.url}}">
+    <h2>{{App.app_name}}</h2>
+    <p>✩ {{App.all_rating}}</p>
+  </div>
+</div>

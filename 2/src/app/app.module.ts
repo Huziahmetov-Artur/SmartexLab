@@ -7,10 +7,8 @@ import { HttpClientModule }   from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppPageComponent } from './app-page/app-page.component';
 import { HeaderComponent } from './header/header.component';
-import { ActionAppComponent } from './action-app/action-app.component';
-import { MusicAppComponent } from './music-app/music-app.component';
-import { StrategyAppComponent } from './strategy-app/strategy-app.component';
-import { AdventureAppComponent } from './adventure-app/adventure-app.component';
+import { GameTypeAppComponent } from './gameType-app/gameType-app.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -18,10 +16,9 @@ import { AdventureAppComponent } from './adventure-app/adventure-app.component';
     ListComponent,
     AppPageComponent,
     HeaderComponent,
-    ActionAppComponent,
-    MusicAppComponent,
-    StrategyAppComponent,
-    AdventureAppComponent
+    GameTypeAppComponent,
+    NotFoundComponent,
+
   ],
   imports: [
     BrowserModule,

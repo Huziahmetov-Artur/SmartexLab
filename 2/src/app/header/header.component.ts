@@ -9,6 +9,7 @@ import {ActivatedRoute, Router} from '@angular/router';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
+
   searchVar;
 
   constructor(public GetService : GetService,private router : Router,private activateRoute: ActivatedRoute) { }
@@ -19,13 +20,8 @@ export class HeaderComponent implements OnInit {
     });
   }
   search() {
-    console.log(this.searchVar)
     this.searchVar = this.searchVar.replace(/\s/g,'').toLowerCase();
-    console.log(this.searchVar)
-    this.router.navigate([`/game/${this.searchVar}`]);
+    this.router.navigate([`/app_name/${this.searchVar}`]);
     this.searchVar = '';
   }
-changeRouter() {
-  this.router.navigate([``]);
-}
 }
