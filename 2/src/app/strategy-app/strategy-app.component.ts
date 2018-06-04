@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {listOfApp} from "../Class/ListMas";
+import {GetService} from '../service/get.service';
 
 @Component({
   selector: 'app-strategy-app',
@@ -7,10 +8,22 @@ import {listOfApp} from "../Class/ListMas";
   styleUrls: ['./strategy-app.component.css']
 })
 export class StrategyAppComponent implements OnInit {
-  test = listOfApp.filter(a => a.app_type === "strategy")
-  constructor() { }
+
+  infoMas;
+  variable;
+  constructor(public GetService : GetService) { }
 
   ngOnInit() {
+    this.refresh();
+  }
+  refresh() {
+    this.GetService.getApi().subscribe(res => {
+      this.variable = res;
+      this.infoMas = this.variable.filter(a => a.app_type === "strategy");
+    });
   }
 
+  change(type) {
+    this.GetService.sortt(this.infoMas, type )
+  }
 }

@@ -12,9 +12,13 @@ export class ListComponent implements OnInit {
   @Input() test;
   @Input() disp;
   user = listOfApp;
-  constructor() { }
+  constructor(public GetService : GetService) { }
 
   ngOnInit() {
 
+  }
+
+  change(type) {
+    this.GetService.sortt(listOfApp, type )
   }
 }

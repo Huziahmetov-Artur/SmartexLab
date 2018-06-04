@@ -13,7 +13,8 @@ const routes : Routes = [
   {path : 'action', component : ActionAppComponent},
   {path : 'music', component : MusicAppComponent},
   {path : 'strategy', component : StrategyAppComponent},
-  {path : 'adventure', component : AdventureAppComponent}
+  {path : 'adventure', component : AdventureAppComponent},
+  {path : 'game/:id', component : AppPageComponent}
 ];
 @NgModule({
   imports: [ RouterModule.forRoot(routes) ],

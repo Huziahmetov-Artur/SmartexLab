@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {listOfApp} from "../Class/ListMas";
+import {GetService} from '../service/get.service';
+import {listOfApp} from '../Class/ListMas';
 
 @Component({
   selector: 'app-action-app',
@@ -8,12 +9,20 @@ import {listOfApp} from "../Class/ListMas";
 })
 export class ActionAppComponent implements OnInit {
 
-  test;
-  constructor() { }
+  infoMas;
+  variable;
+  constructor(public GetService : GetService) { }
 
   ngOnInit() {
-    this.test = listOfApp.filter(a => a.app_type === "action")
-    console.log(listOfApp)
+    this.refresh();
   }
-
+  refresh() {
+    this.GetService.getApi().subscribe(res => {
+      this.variable = res;
+      this.infoMas = this.variable.filter(a => a.app_type === 'action');
+    });
+  }
+  change(type) {
+    this.GetService.sortt(this.infoMas, type )
+  }
 }
